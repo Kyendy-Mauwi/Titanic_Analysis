@@ -3,6 +3,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+import subprocess
+subprocess.check_call([sys.executable, "-m", "pip", "install", "seaborn"])
+
+
 # Loading dataset
 def load_data():
     df = pd.read_csv("Datasets/Titanic_tested.csv")
